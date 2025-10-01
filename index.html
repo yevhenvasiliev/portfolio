@@ -224,6 +224,28 @@
             opacity: 0.8;
         }
 
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInUp 0.8s ease 0.6s;
+            animation-fill-mode: both;
+        }
+
+        .hero-photo {
+            width: 100%;
+            max-width: 400px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-photo:hover {
+            transform: scale(1.02);
+        }
+
         /* Portfolio Grid */
         .portfolio {
             padding: 4rem 2rem;
@@ -531,6 +553,10 @@
                 justify-content: center;
             }
 
+            .hero-image {
+                display: none;
+            }
+
             /* Fix for Content Expertise section on mobile */
             .category-item.active .category-content {
                 max-height: none;
@@ -735,7 +761,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Placeholder for hero image or animation -->
+                <img src="https://i.ibb.co/MxH193t9/IMG-20231019-112601-961.png" alt="Yevhen Vasyliev" class="hero-photo">
             </div>
         </div>
     </section>
